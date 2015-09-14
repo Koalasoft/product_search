@@ -1,0 +1,37 @@
+uuid: cf613c57-b14a-4d4f-a94e-78023262f361
+langcode: es
+status: true
+dependencies:
+  module:
+    - product_search
+    - system
+  theme:
+    - siquesi
+id: ps_searcher_block
+theme: siquesi
+region: highlighted
+weight: 4
+provider: null
+plugin: ps_searcher
+settings:
+  id: ps_searcher
+  label: Searcher
+  provider: product_search
+  label_display: '0'
+  cache:
+    max_age: 0
+  enabled: 1
+  visibility:
+    user_role:
+      id: user_role
+      roles:
+        authenticated: authenticated
+      negate: false
+  searcher: Salud
+  default_search: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
