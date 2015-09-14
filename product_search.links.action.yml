@@ -1,0 +1,35 @@
+entity.ps_product.add_form:
+  route_name: entity.ps_product.add_form
+  title: 'Add Product'
+  appears_on:
+    - entity.ps_product.collection
+    - entity.ps_product.canonical
+
+entity.ps_category.add_form:
+  route_name: entity.ps_category.add_form
+  title: 'Add Category'
+  appears_on:
+    - entity.ps_category.collection
+    - entity.ps_category.canonical
+
+entity.ps_political_division.add_form:
+  route_name: entity.ps_political_division.add_form
+  title: 'Add Political division'
+  appears_on:
+    - entity.ps_political_division.collection
+    - entity.ps_political_division.canonical
+
+entity.ps_presentation.add_form:
+  route_name: entity.ps_presentation.add_form
+  title: 'Add Presentation'
+  appears_on:
+    - entity.ps_presentation.collection
+    - entity.ps_presentation.canonical
+
+entity.ps_person.add_form:
+  route_name: entity.ps_person.add_form
+  title: 'Add Person'
+  appears_on:
+    - entity.ps_person.collection
+    - entity.ps_person.canonical
+

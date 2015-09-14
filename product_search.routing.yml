@@ -1,0 +1,250 @@
+
+# Product routing definition
+entity.ps_product.canonical:
+  path: '/admin/ps_product/{ps_product}'
+  defaults:
+    _entity_view: 'ps_product'
+    _title: 'Product'
+  requirements:
+    _entity_access: 'ps_product.view'
+
+entity.ps_product.collection:
+  path: '/admin/ps_product'
+  defaults:
+    _entity_list: 'ps_product'
+    _title: 'Product list'
+  requirements:
+    _permission: 'view product entities'
+
+entity.ps_product.add_form:
+  path: '/admin/ps_product/add'
+  defaults:
+    _entity_form: ps_product.add
+    _title: 'Add Product'
+  requirements:
+    _permission: 'add product entities'
+
+entity.ps_product.edit_form:
+  path: '/admin/ps_product/{ps_product}/edit'
+  defaults:
+    _entity_form: ps_product.edit
+    _title: 'Edit Product'
+  requirements:
+    _permission: 'edit product entities'
+
+entity.ps_product.delete_form:
+  path: '/admin/ps_product/{ps_product}/delete'
+  defaults:
+    _entity_form: ps_product.delete
+    _title: 'Delete Product'
+  requirements:
+    _permission: 'delete product entities'
+
+ps_product.settings:
+  path: 'admin/structure/ps_product'
+  defaults:
+   _form: '\Drupal\product_search\Entity\Form\ProductSettingsForm'
+   _title: 'Product settings'
+  requirements:
+    _permission: 'administer product entities'
+
+
+# Category routing definition
+entity.ps_category.canonical:
+  path: '/admin/ps_category/{ps_category}'
+  defaults:
+    _entity_view: 'ps_category'
+    _title: 'Category'
+  requirements:
+    _entity_access: 'ps_category.view'
+
+entity.ps_category.collection:
+  path: '/admin/ps_category'
+  defaults:
+    _entity_list: 'ps_category'
+    _title: 'Category list'
+  requirements:
+    _permission: 'view category entities'
+
+entity.ps_category.add_form:
+  path: '/admin/ps_category/add'
+  defaults:
+    _entity_form: ps_category.add
+    _title: 'Add Category'
+  requirements:
+    _permission: 'add category entities'
+
+entity.ps_category.edit_form:
+  path: '/admin/ps_category/{ps_category}/edit'
+  defaults:
+    _entity_form: ps_category.edit
+    _title: 'Edit Category'
+  requirements:
+    _permission: 'edit category entities'
+
+entity.ps_category.delete_form:
+  path: '/admin/ps_category/{ps_category}/delete'
+  defaults:
+    _entity_form: ps_category.delete
+    _title: 'Delete Category'
+  requirements:
+    _permission: 'delete category entities'
+
+ps_category.settings:
+  path: 'admin/structure/ps_category'
+  defaults:
+   _form: '\Drupal\product_search\Entity\Form\CategorySettingsForm'
+   _title: 'Category settings'
+  requirements:
+    _permission: 'administer category entities'
+
+
+# PoliticalDivision routing definition
+entity.ps_political_division.canonical:
+  path: '/admin/ps_political_division/{ps_political_division}'
+  defaults:
+    _entity_view: 'ps_political_division'
+    _title: 'Political division'
+  requirements:
+    _entity_access: 'ps_political_division.view'
+
+entity.ps_political_division.collection:
+  path: '/admin/ps_political_division'
+  defaults:
+    _entity_list: 'ps_political_division'
+    _title: 'Political division list'
+  requirements:
+    _permission: 'view political division entities'
+
+entity.ps_political_division.add_form:
+  path: '/admin/ps_political_division/add'
+  defaults:
+    _entity_form: ps_political_division.add
+    _title: 'Add Political division'
+  requirements:
+    _permission: 'add political division entities'
+
+entity.ps_political_division.edit_form:
+  path: '/admin/ps_political_division/{ps_political_division}/edit'
+  defaults:
+    _entity_form: ps_political_division.edit
+    _title: 'Edit Political division'
+  requirements:
+    _permission: 'edit political division entities'
+
+entity.ps_political_division.delete_form:
+  path: '/admin/ps_political_division/{ps_political_division}/delete'
+  defaults:
+    _entity_form: ps_political_division.delete
+    _title: 'Delete Political division'
+  requirements:
+    _permission: 'delete political division entities'
+
+ps_political_division.settings:
+  path: 'admin/structure/ps_political_division'
+  defaults:
+   _form: '\Drupal\product_search\Entity\Form\PoliticalDivisionSettingsForm'
+   _title: 'Political division settings'
+  requirements:
+    _permission: 'administer political division entities'
+
+
+# Presentation routing definition
+entity.ps_presentation.canonical:
+  path: '/admin/ps_presentation/{ps_presentation}'
+  defaults:
+    _entity_view: 'ps_presentation'
+    _title: 'Presentation'
+  requirements:
+    _entity_access: 'ps_presentation.view'
+
+entity.ps_presentation.collection:
+  path: '/admin/ps_presentation'
+  defaults:
+    _entity_list: 'ps_presentation'
+    _title: 'Presentation list'
+  requirements:
+    _permission: 'view presentation entities'
+
+entity.ps_presentation.add_form:
+  path: '/admin/ps_presentation/add'
+  defaults:
+    _entity_form: ps_presentation.add
+    _title: 'Add Presentation'
+  requirements:
+    _permission: 'add presentation entities'
+
+entity.ps_presentation.edit_form:
+  path: '/admin/ps_presentation/{ps_presentation}/edit'
+  defaults:
+    _entity_form: ps_presentation.edit
+    _title: 'Edit Presentation'
+  requirements:
+    _permission: 'edit presentation entities'
+
+entity.ps_presentation.delete_form:
+  path: '/admin/ps_presentation/{ps_presentation}/delete'
+  defaults:
+    _entity_form: ps_presentation.delete
+    _title: 'Delete Presentation'
+  requirements:
+    _permission: 'delete presentation entities'
+
+ps_presentation.settings:
+  path: 'admin/structure/ps_presentation'
+  defaults:
+   _form: '\Drupal\product_search\Entity\Form\PresentationSettingsForm'
+   _title: 'Presentation settings'
+  requirements:
+    _permission: 'administer presentation entities'
+
+
+# Person routing definition
+entity.ps_person.canonical:
+  path: '/admin/ps_person/{ps_person}'
+  defaults:
+    _entity_view: 'ps_person'
+    _title: 'Person'
+  requirements:
+    _entity_access: 'ps_person.view'
+
+entity.ps_person.collection:
+  path: '/admin/ps_person'
+  defaults:
+    _entity_list: 'ps_person'
+    _title: 'Person list'
+  requirements:
+    _permission: 'view person entities'
+
+entity.ps_person.add_form:
+  path: '/admin/ps_person/add'
+  defaults:
+    _entity_form: ps_person.add
+    _title: 'Add Person'
+  requirements:
+    _permission: 'add person entities'
+
+entity.ps_person.edit_form:
+  path: '/admin/ps_person/{ps_person}/edit'
+  defaults:
+    _entity_form: ps_person.edit
+    _title: 'Edit Person'
+  requirements:
+    _permission: 'edit person entities'
+
+entity.ps_person.delete_form:
+  path: '/admin/ps_person/{ps_person}/delete'
+  defaults:
+    _entity_form: ps_person.delete
+    _title: 'Delete Person'
+  requirements:
+    _permission: 'delete person entities'
+
+ps_person.settings:
+  path: 'admin/structure/ps_person'
+  defaults:
+   _form: '\Drupal\product_search\Entity\Form\PersonSettingsForm'
+   _title: 'Person settings'
+  requirements:
+    _permission: 'administer person entities'
+

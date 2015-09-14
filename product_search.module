@@ -24,6 +24,38 @@ function product_search_help($route_name, RouteMatchInterface $route_match) {
 }
 
 /**
+ *  Implements hook_page_attachments().
+ */
+function product_search_page_attachments(array &$page) {
+  /*$description = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'description',
+      'content' => t('Searcher of products and services'),
+    ],
+  ];
+  $keywords = [
+    '#tag' => 'meta',
+    '#attributes' => [
+      'name' => 'keywords',
+      'content' => t('Products, services in general. Like garden services, mason, colourman, secreatary, doctor, computing, companies, etc'),
+    ],
+  ];
+
+  $page['#attached']['html_head'][] = [
+    $description,
+    'description',
+  ];
+
+  $page['#attached']['html_head'][] = [
+    $keywords,
+    'keywords',
+  ];*/
+
+
+}
+
+/**
  * Implements hook_theme().
  */
 function product_search_theme() {

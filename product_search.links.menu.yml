@@ -1,0 +1,60 @@
+# Product menu items definition
+entity.ps_product.collection:
+  title: 'Product list'
+  route_name: entity.ps_product.collection
+  description: 'List Product entities'
+
+ps_product.admin.structure.settings:
+  title: Product settings
+  description: 'Configure Product entities'
+  route_name: ps_product.settings
+  parent: system.admin_structure
+
+# Category menu items definition
+entity.ps_category.collection:
+  title: 'Category list'
+  route_name: entity.ps_category.collection
+  description: 'List Category entities'
+
+ps_category.admin.structure.settings:
+  title: Category settings
+  description: 'Configure Category entities'
+  route_name: ps_category.settings
+  parent: system.admin_structure
+
+# Political division menu items definition
+entity.ps_political_division.collection:
+  title: 'Political division list'
+  route_name: entity.ps_political_division.collection
+  description: 'List Political division entities'
+
+ps_political_division.admin.structure.settings:
+  title: Political division settings
+  description: 'Configure Political division entities'
+  route_name: ps_political_division.settings
+  parent: system.admin_structure
+
+# Presentation menu items definition
+entity.ps_presentation.collection:
+  title: 'Presentation list'
+  route_name: entity.ps_presentation.collection
+  description: 'List Presentation entities'
+
+ps_presentation.admin.structure.settings:
+  title: Presentation settings
+  description: 'Configure Presentation entities'
+  route_name: ps_presentation.settings
+  parent: system.admin_structure
+
+# Person menu items definition
+entity.ps_person.collection:
+  title: 'Person list'
+  route_name: entity.ps_person.collection
+  description: 'List Person entities'
+
+ps_person.admin.structure.settings:
+  title: Person settings
+  description: 'Configure Person entities'
+  route_name: ps_person.settings
+  parent: system.admin_structure
+

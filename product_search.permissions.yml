@@ -1,0 +1,75 @@
+add product entities:
+  title: 'Create new Product entities'
+
+administer product entities:
+  title: 'Administer Product entities'
+  description: 'Allow to access the administration form to configure Product entities.'
+
+delete product entities:
+  title: 'Delete Product entities'
+
+edit product entities:
+  title: 'Edit Product entities'
+
+view product entities:
+  title: 'View Product entities'
+add category entities:
+  title: 'Create new Category entities'
+
+administer category entities:
+  title: 'Administer Category entities'
+  description: 'Allow to access the administration form to configure Category entities.'
+
+delete category entities:
+  title: 'Delete Category entities'
+
+edit category entities:
+  title: 'Edit Category entities'
+
+view category entities:
+  title: 'View Category entities'
+add political division entities:
+  title: 'Create new Political division entities'
+
+administer political division entities:
+  title: 'Administer Political division entities'
+  description: 'Allow to access the administration form to configure Political division entities.'
+
+delete political division entities:
+  title: 'Delete Political division entities'
+
+edit political division entities:
+  title: 'Edit Political division entities'
+
+view political division entities:
+  title: 'View Political division entities'
+add presentation entities:
+  title: 'Create new Presentation entities'
+
+administer presentation entities:
+  title: 'Administer Presentation entities'
+  description: 'Allow to access the administration form to configure Presentation entities.'
+
+delete presentation entities:
+  title: 'Delete Presentation entities'
+
+edit presentation entities:
+  title: 'Edit Presentation entities'
+
+view presentation entities:
+  title: 'View Presentation entities'
+add person entities:
+  title: 'Create new Person entities'
+
+administer person entities:
+  title: 'Administer Person entities'
+  description: 'Allow to access the administration form to configure Person entities.'
+
+delete person entities:
+  title: 'Delete Person entities'
+
+edit person entities:
+  title: 'Edit Person entities'
+
+view person entities:
+  title: 'View Person entities'

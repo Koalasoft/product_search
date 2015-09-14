@@ -1,0 +1,110 @@
+# Product routing definition
+ps_product.settings_tab:
+  route_name: ps_product.settings
+  title: 'Settings'
+  base_route: ps_product.settings
+
+entity.ps_product.canonical:
+  route_name: entity.ps_product.canonical
+  base_route: entity.ps_product.canonical
+  title: 'View'
+
+entity.ps_product.edit_form:
+  route_name: entity.ps_product.edit_form
+  base_route: entity.ps_product.canonical
+  title: Edit
+
+entity.ps_product.delete_form:
+  route_name:  entity.ps_product.delete_form
+  base_route:  entity.ps_product.canonical
+  title: Delete
+  weight: 10
+
+# Category routing definition
+ps_category.settings_tab:
+  route_name: ps_category.settings
+  title: 'Settings'
+  base_route: ps_category.settings
+
+entity.ps_category.canonical:
+  route_name: entity.ps_category.canonical
+  base_route: entity.ps_category.canonical
+  title: 'View'
+
+entity.ps_category.edit_form:
+  route_name: entity.ps_category.edit_form
+  base_route: entity.ps_category.canonical
+  title: Edit
+
+entity.ps_category.delete_form:
+  route_name:  entity.ps_category.delete_form
+  base_route:  entity.ps_category.canonical
+  title: Delete
+  weight: 10
+
+# Political division routing definition
+ps_political_division.settings_tab:
+  route_name: ps_political_division.settings
+  title: 'Settings'
+  base_route: ps_political_division.settings
+
+entity.ps_political_division.canonical:
+  route_name: entity.ps_political_division.canonical
+  base_route: entity.ps_political_division.canonical
+  title: 'View'
+
+entity.ps_political_division.edit_form:
+  route_name: entity.ps_political_division.edit_form
+  base_route: entity.ps_political_division.canonical
+  title: Edit
+
+entity.ps_political_division.delete_form:
+  route_name:  entity.ps_political_division.delete_form
+  base_route:  entity.ps_political_division.canonical
+  title: Delete
+  weight: 10
+
+# Presentation routing definition
+ps_presentation.settings_tab:
+  route_name: ps_presentation.settings
+  title: 'Settings'
+  base_route: ps_presentation.settings
+
+entity.ps_presentation.canonical:
+  route_name: entity.ps_presentation.canonical
+  base_route: entity.ps_presentation.canonical
+  title: 'View'
+
+entity.ps_presentation.edit_form:
+  route_name: entity.ps_presentation.edit_form
+  base_route: entity.ps_presentation.canonical
+  title: Edit
+
+entity.ps_presentation.delete_form:
+  route_name:  entity.ps_presentation.delete_form
+  base_route:  entity.ps_presentation.canonical
+  title: Delete
+  weight: 10
+
+# Person routing definition
+ps_person.settings_tab:
+  route_name: ps_person.settings
+  title: 'Settings'
+  base_route: ps_person.settings
+
+entity.ps_person.canonical:
+  route_name: entity.ps_person.canonical
+  base_route: entity.ps_person.canonical
+  title: 'View'
+
+entity.ps_person.edit_form:
+  route_name: entity.ps_person.edit_form
+  base_route: entity.ps_person.canonical
+  title: Edit
+
+entity.ps_person.delete_form:
+  route_name:  entity.ps_person.delete_form
+  base_route:  entity.ps_person.canonical
+  title: Delete
+  weight: 10
+
