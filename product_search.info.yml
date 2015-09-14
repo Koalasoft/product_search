@@ -1,0 +1,6 @@
+name: Product search
+type: module
+description: A simple products searcher
+core: 8.x
+package: Si que si
+
