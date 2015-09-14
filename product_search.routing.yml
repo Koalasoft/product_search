@@ -1,7 +1,7 @@
 
 # Product routing definition
 entity.ps_product.canonical:
-  path: '/admin/ps_product/{ps_product}'
+  path: '/product/{ps_product}'
   defaults:
     _entity_view: 'ps_product'
     _title: 'Product'
