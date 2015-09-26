@@ -1,0 +1,29 @@
+uuid: 118df5dc-646c-456b-9500-a13d03221233
+langcode: es
+status: true
+dependencies:
+  module:
+    - product_search
+    - system
+  theme:
+    - siquesi
+id: results
+theme: siquesi
+region: content
+weight: -8
+provider: null
+plugin: ps_results
+settings:
+  id: ps_results
+  label: Results
+  provider: product_search
+  label_display: visible
+  cache:
+    max_age: -1
+  number_of_results: '10'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
