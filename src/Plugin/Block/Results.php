@@ -46,7 +46,6 @@ class Results extends BlockBase {
    */
   public function build() {
     $build = [];
-    //$build['ps_results_number_of_results']['#markup'] = '<p>' . $this->configuration['number_of_results'] . '</p>';
     $number = $this->configuration['number_of_results'];
     $i = 1;
 
