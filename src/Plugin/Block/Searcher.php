@@ -67,6 +67,7 @@ class Searcher extends BlockBase {
     $build['need'] = array(
       '#type' => 'textfield',
       '#description' => $this->t(''),
+      '#description_display' => null,
       '#default_value' => "",
       '#attributes' => array(
         'placeholder' => '_' . $this->t('What do you search?'),
@@ -83,6 +84,7 @@ class Searcher extends BlockBase {
 
     $build['require'] = array(
       '#type' => "button",
+      '#description_display' => null,
       '#value' => $this->t("I require"),
       '#attributes' => array(
         'id' => 'edit-require',
@@ -98,6 +100,7 @@ class Searcher extends BlockBase {
 
     $build['bid'] = array(
       '#type' => "button",
+      '#description_display' => null,
       '#value' => $this->t("I bid"),
       '#attributes' => array(
         'id' => 'edit-bid',
