@@ -59,7 +59,7 @@ class Searcher extends BlockBase {
     }
     $result = db_query('SELECT DISTINCT(detail) FROM {ps_product}');
     foreach ($result as $record) {
-      if (strpos($services, $record->detail) === FALSE) {
+      if (!empty($record->detail) && strpos($services, $record->detail) === FALSE) {
         $services = $record->detail . ", " . $services;
       }
     }
