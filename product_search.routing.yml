@@ -248,3 +248,20 @@ ps_person.settings:
   requirements:
     _permission: 'administer person entities'
 
+
+# In order to to create pages it is necessary to define routes for them.
+# A route maps a URL path to a controller. It defines with what function
+# or method will be called when a URL is accessed.
+# If the user accesses http://drupal8.dev/product_search/search/{searched}, the routing
+# system will look for a route with that path. In this case it will find a
+# match, and execute the _controller callback. In this case the callback is
+# defined as a classname
+# ("\Drupal\product_search\Controller\DefaultController")
+# and a method ("search").
+product_search.default_controller_search:
+  path: 'product_search/{searched}/{operation}'
+  defaults:
+    _controller: '\Drupal\product_search\Controller\DefaultController::search'
+    _title: 'search'
+  requirements:
+    _permission: 'access content'
