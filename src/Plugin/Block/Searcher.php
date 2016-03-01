@@ -9,6 +9,7 @@ namespace Drupal\product_search\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Component\Utility\SafeMarkup;
 
 /**
  * Provides a 'Searcher' block.
