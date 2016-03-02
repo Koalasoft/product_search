@@ -9,12 +9,15 @@ Object.size = function(obj) {
 var DrawSearch = React.createClass({
     render: function() {
         var createItem = function(item) {
+            var url = "http://" + item.webpage;
             return (
                 <div id="searched_1">
-                    <a href="product/233"><h2>{item.name}</h2></a>
+                    <a href=""><h2>{item.name}</h2></a>
                     <p><span class="highlight">Phone: </span>{item.phone}</p>
-                    <p><span class="normal">Webpage: </span><a href="" target="_blank">{item.webpage}</a></p>
+                    <p><span class="normal">Webpage: </span><a href={url} target="_blank">{item.webpage}</a></p>
+                    <p><span class="normal">Email: </span>{item.email}</p>
                     <p><span class="normal">Address: </span>{item.address}</p>
+                    <p><span class="normal"></span>{item.detail}</p>
                 </div>
             );
         };
@@ -53,6 +56,6 @@ var Searcher = React.createClass({
 });
 
 ReactDOM.render(
-    <Searcher source="http://www.devsiquesi.com/product_search/Desarrollo/Offer" />,
+    <Searcher source="http://www.devsiquesi.com/product_search/salud/Offer" />,
     document.getElementById('block-results')
 );

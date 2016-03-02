@@ -46,35 +46,11 @@ class Results extends BlockBase {
    */
   public function build() {
     $build = [];
-    $number = $this->configuration['number_of_results'];
-    $i = 1;
 
-    $result = db_query(
-      "SELECT * FROM {ps_product} ORDER BY RAND() LIMIT $number"
-    );
-
-    foreach ($result as $record) {
-      $id = $record->id;
-      $name = ($record->name != '' ? "<h2>" . $record->name . "</h2>" : "");
-      $phone = ($record->phone != '' ? "<p><span class='highlight'>" . t("Phone") . ": </span>" . $record->phone . "</p>" : "");
-      $cellphone = ($record->cellphone != '' ? "<p><span class='normal'>" . t("Cellphone") . ": </span>" . $record->cellphone . "</p>" : "");
-      $email = ($record->email != '' ? "<p><span class='normal'>" . t("Email") . ": </span>" . $record->email . "</p>" : "");
-      $webpage = ($record->webpage != '' ? "<p><span class='normal'>" . t("Webpage") . ": </span><a href='http://" . $record->webpage . "' target='_blank' >" . $record->webpage . "</a></p>" : "");
-      $address = ($record->address != '' ? "<p><span class='normal'>" . t("Address") . ": </span>" . $record->address . "</p>" : "");
-
-      $build['newContent_' . $i] = array(
+    $build['content'] = array(
         '#markup' => "
-          <div id='searched_" . $i . "'>
-          <a href='product/" . $id . "' >" . $name . " </a>
-          " . $phone . "
-          " . $cellphone . "
-          " . $email . "
-          " . $webpage . "
-          " . $address . "
-          </div>",
-      );
-      $i++;
-    }
+          <div id='block-results'> </div>",
+    );
 
     return $build;
   }

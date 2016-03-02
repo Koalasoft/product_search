@@ -42,6 +42,7 @@ class DefaultController extends ControllerBase {
             'email' => $entity->get('email')->value,
             'webpage' => $entity->get('webpage')->value,
             'address' => $entity->get('address')->value,
+            'detail' => $entity->get('detail')->value,
         );
         $i++;
       }
