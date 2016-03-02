@@ -1,23 +1,19 @@
 "use strict";
 
-Object.size = function (obj) {
-    var size = 0,
-        key;
-    for (key in obj) {
-        if (obj.hasOwnProperty(key)) size++;
-    }
-    return size;
-};
-
 var DrawSearch = React.createClass({
     displayName: "DrawSearch",
 
     render: function render() {
         var createItem = function createItem(item) {
             var url = "http://" + item.webpage;
+            var rand = Math.floor(Math.random() * 8) + 1;
+            var id = "searched_" + rand;
+
+            console.log("Trooo:", rand);
+
             return React.createElement(
                 "div",
-                { id: "searched_1" },
+                { id: id },
                 React.createElement(
                     "a",
                     { href: "" },
@@ -97,8 +93,7 @@ var Searcher = React.createClass({
     componentDidMount: function componentDidMount() {
         this.serverRequest = $.get(this.props.source, function (result) {
             this.setState({
-                items: result,
-                title: "buttonX"
+                items: result
             });
         }.bind(this));
     },
@@ -108,7 +103,7 @@ var Searcher = React.createClass({
     },
 
     render: function render() {
-        console.log(this.state.items);
+        console.log("render:", this.state.items);
         var itemsArray = jQuery.makeArray(this.state.items);
 
         return React.createElement(
