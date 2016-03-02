@@ -1,11 +1,11 @@
 searcher:
   version: 1.x
   js:
-    js/react.min.js: {}
-    js/react-dom.min.js: {}
+    js/react.js: {}
+    js/react-dom.js: {}
     js/browser.min.js: {}
-    js/product_search.js: {}
     js/transformed/searcher.js: {}
+    js/product_search.js: {}
   dependencies:
       - core/jquery
 

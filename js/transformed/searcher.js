@@ -9,8 +9,6 @@ var DrawSearch = React.createClass({
             var rand = Math.floor(Math.random() * 8) + 1;
             var id = "searched_" + rand;
 
-            console.log("Trooo:", rand);
-
             return React.createElement(
                 "div",
                 { id: id },
@@ -28,7 +26,7 @@ var DrawSearch = React.createClass({
                     null,
                     React.createElement(
                         "span",
-                        { "class": "highlight" },
+                        { className: "highlight" },
                         "Phone: "
                     ),
                     item.phone
@@ -38,7 +36,7 @@ var DrawSearch = React.createClass({
                     null,
                     React.createElement(
                         "span",
-                        { "class": "normal" },
+                        { className: "normal" },
                         "Webpage: "
                     ),
                     React.createElement(
@@ -52,7 +50,7 @@ var DrawSearch = React.createClass({
                     null,
                     React.createElement(
                         "span",
-                        { "class": "normal" },
+                        { className: "normal" },
                         "Email: "
                     ),
                     item.email
@@ -62,7 +60,7 @@ var DrawSearch = React.createClass({
                     null,
                     React.createElement(
                         "span",
-                        { "class": "normal" },
+                        { className: "normal" },
                         "Address: "
                     ),
                     item.address
@@ -70,14 +68,14 @@ var DrawSearch = React.createClass({
                 React.createElement(
                     "p",
                     null,
-                    React.createElement("span", { "class": "normal" }),
+                    React.createElement("span", { className: "normal" }),
                     item.detail
                 )
             );
         };
         return React.createElement(
             "div",
-            { "class": "content" },
+            { className: "content" },
             this.props.items.map(createItem)
         );
     }
@@ -103,7 +101,6 @@ var Searcher = React.createClass({
     },
 
     render: function render() {
-        console.log("render:", this.state.items);
         var itemsArray = jQuery.makeArray(this.state.items);
 
         return React.createElement(
