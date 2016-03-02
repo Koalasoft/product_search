@@ -7,7 +7,7 @@
                 var myComponent = ReactDOM.render(
                     React.createElement(
                         Searcher,
-                        { source: "http://www.devsiquesi.com/product_search/" + searched + "/Offer" }
+                        { source: "http://" + document.domain + "/product_search/" + searched + "/Offer" }
                     ),
                     document.getElementById('block-results'));
                 myComponent.componentDidMount();

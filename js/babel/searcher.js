@@ -48,7 +48,9 @@ var Searcher = React.createClass({
     }
 });
 
+var sourceString = "http://" + document.domain + "/product_search/salud/Offer";
+
 ReactDOM.render(
-    <Searcher source="http://www.devsiquesi.com/product_search/salud/Offer" />,
+    <Searcher source = {sourceString}  />,
     document.getElementById('block-results')
 );

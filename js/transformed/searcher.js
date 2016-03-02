@@ -111,4 +111,6 @@ var Searcher = React.createClass({
     }
 });
 
-ReactDOM.render(React.createElement(Searcher, { source: "http://www.devsiquesi.com/product_search/salud/Offer" }), document.getElementById('block-results'));
+var sourceString = "http://" + document.domain + "/product_search/salud/Offer";
+
+ReactDOM.render(React.createElement(Searcher, { source: sourceString }), document.getElementById('block-results'));
