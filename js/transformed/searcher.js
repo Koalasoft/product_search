@@ -27,7 +27,7 @@ var DrawSearch = React.createClass({
                     React.createElement(
                         "span",
                         { className: "highlight" },
-                        "Phone: "
+                        "Teléfono: "
                     ),
                     item.phone
                 ),
@@ -37,7 +37,7 @@ var DrawSearch = React.createClass({
                     React.createElement(
                         "span",
                         { className: "normal" },
-                        "Webpage: "
+                        "Página web: "
                     ),
                     React.createElement(
                         "a",
@@ -61,7 +61,7 @@ var DrawSearch = React.createClass({
                     React.createElement(
                         "span",
                         { className: "normal" },
-                        "Address: "
+                        "Dirección: "
                     ),
                     item.address
                 ),

@@ -8,10 +8,10 @@ var DrawSearch = React.createClass({
             return (
                 <div id={id}>
                     <a href=""><h2>{item.name}</h2></a>
-                    <p><span className="highlight">Phone: </span>{item.phone}</p>
-                    <p><span className="normal">Webpage: </span><a href={url} target="_blank">{item.webpage}</a></p>
+                    <p><span className="highlight">Teléfono: </span>{item.phone}</p>
+                    <p><span className="normal">Página web: </span><a href={url} target="_blank">{item.webpage}</a></p>
                     <p><span className="normal">Email: </span>{item.email}</p>
-                    <p><span className="normal">Address: </span>{item.address}</p>
+                    <p><span className="normal">Dirección: </span>{item.address}</p>
                     <p><span className="normal"></span>{item.detail}</p>
                 </div>
             );
