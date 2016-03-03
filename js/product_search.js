@@ -14,6 +14,12 @@
             }
 
         });
+
+        $( "#edit-bid" ).click(function() {
+
+            alert("Muy pronto activaremos esta opción. Gracias por visitarnos");
+
+        });
     });
 })(jQuery);
 
